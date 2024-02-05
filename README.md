@@ -74,8 +74,6 @@ scrape_configs:
       services: ['SYS.VPC,SYS.ELB']
 ```
 2. Start prometheus to monitor Cloud.ru Advanced services
-```
-./prometheus
-```
+
 * Log in to http://127.0.0.1:9090/graph
 * View the monitoring results of specified indicators

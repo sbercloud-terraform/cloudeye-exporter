@@ -1,0 +1,10 @@
+global:
+  prefix: "cloudru"
+  scrape_batch_size: 10
+
+auth:
+  auth_url: "https://iam.ru-moscow-1.hc.sbercloud.ru/v3"
+  project_name: "{project_name}"
+  access_key: "{access_key}"
+  secret_key: "{secret_key}"
+  region: "ru-moscow-1"

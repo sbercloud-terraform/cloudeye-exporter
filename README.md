@@ -56,7 +56,20 @@ Usage of ./cloudeye-exporter:
         If debug the code.
  
 ```
+
 The default port is 8087, default config file location is ./clouds.yml.
+
+## (Option) Building for OS Linux & Arch x86-64
+```
+$ wget https://dl.google.com/go/go1.21.0.linux-amd64.tar.gz
+$ sudo tar -C /usr/local -xzf go1.21.0.linux-amd64.tar.gz
+$ export PATH=$PATH:/usr/local/go/bin
+$ go version # to verify it runs and version #
+
+$ git clone https://github.com/sbercloud-terraform/cloudeye-exporter
+$ cd cloudeye-exporter
+$ go build
+```
 
 ## Configure prometheus to connect to cloudeye
 1. Configure access to cloudeye exporter node
